@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js"></script>
+</head>
+
+<body>
+    <div id="mocha"></div>
+    <script>
+        mocha.setup('bdd');
+        var assert = chai.assert;
+    </script>
+
+    <script src="./settingsWithBill.js"></script>
+    <script src="./unitests/billsettings-test.js"></script>
+    <script src="./radiobttnbill.js"></script>
+    <script src="./unitests/radiobttn-test.js"></script>
+    <script src="./inpuBill.js"></script>
+    <script src="./unitests/inputBill-test.js"></script>
+    <script src="./calculateBill.js"></script>
+    <script src="./unitests/calculateBill-test.js"></script>
+    <!-- <script src="./function/isFromBellville.js"></script> -->
+    <!-- <script src="./test/isFromBellville.test.js"></script> -->
+    <!-- <script src="./function/regCheck.js"></script> -->
+    <!-- <script src="./test/regCheck.test.js"></script> -->
+    <!-- <script src="./function/countRegNumber.js"></script> -->
+    <!-- <script src="./test/countRegNumber.test.js"></script> -->
+    <!-- <script src="./function/isWeekday.js"></script> -->
+    
+
+    <script>
+        mocha.checkLeaks();
+        mocha.run();
+    </script>
+</body>
+
+</html>
